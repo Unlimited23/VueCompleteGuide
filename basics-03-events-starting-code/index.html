@@ -18,9 +18,15 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button>Add</button>
-      <button>Remove</button>
+      <button @click="add(10)">Add 10</button>
+      <button @click.right="reduce(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" @input="updateName($event, 'Pesho')" @keyup.enter="confirmInput">
+      <p>Your name: {{ confirmedName }}</p>
+      <form @submit.prevent>
+        <input type="text"> 
+        <button>Sign up</button>
+      </form>
     </section>
   </body>
 </html>
