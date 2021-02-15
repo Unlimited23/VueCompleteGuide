@@ -2,7 +2,7 @@ const app = Vue.createApp({
   data() {
     const name = 'Petyo'
     return {
-      counter: 0,
+      counter: 10,
       num: 5,
       name: name,
       confirmedName: name,
