@@ -1,4 +1,4 @@
-const vue = Vue.createApp({
+const app = Vue.createApp({
   data() {
     return {
       counter: 0,
